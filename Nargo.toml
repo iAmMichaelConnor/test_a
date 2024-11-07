@@ -5,7 +5,8 @@ authors = [""]
 compiler_version = "0.37.0"
 
 [dependencies]
-b = { path = "../test_b" }
+# b = { path = "../test_b" }
+b = { tag = "main", git = "https://github.com/iAmMichaelConnor/test_b.git" }
 # TOGGLE THESE IMPORTS. One works, one will error with `error: Expected type C, found type C`, when you run `nargo test`.
-c = { path = "../test_c" }
-# c = { tag = "main", git = "https://github.com/iAmMichaelConnor/test_c.git" }
+# c = { path = "../test_c" }
+c = { tag = "main", git = "https://github.com/iAmMichaelConnor/test_c.git" }
